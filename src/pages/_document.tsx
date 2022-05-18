@@ -1,13 +1,16 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-import { AppConfig } from '../utils/AppConfig';
-
-// Need to create a custom _document because i18n support is not compatible with `next export`.
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang={AppConfig.locale}>
-        <Head />
+      <Html lang={'dk'}>
+        {/* <Head /> */}
+        <Head>
+          {/* <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700;800;900&display=fallback"
+            rel="stylesheet"
+          /> */}
+        </Head>
         <body>
           <Main />
           <NextScript />
