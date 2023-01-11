@@ -10,7 +10,7 @@ interface Props {
 
 const SideNavigation = ({ openMenu, setOpenMenu }: Props) => {
   const showMenu =
-    'fixed right-0 top-0 h-screen w-1/2 overflow-y-auto bg-white transition ease-in-out delay-150 rounded-tl-3xl rounded-bl-3xl -mx-1';
+    'fixed right-0 top-0 h-screen w-1/2 overflow-y-auto bg-white transition ease-in-out delay-150 rounded-tl-3xl rounded-bl-3xl -mx-1 z-10';
   return (
     <nav className="2xl:hidden" onClick={() => setOpenMenu(!openMenu)}>
       {!openMenu ? (
