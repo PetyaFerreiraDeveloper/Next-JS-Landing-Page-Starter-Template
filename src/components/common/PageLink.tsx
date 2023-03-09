@@ -5,11 +5,11 @@ import Link from 'next/link';
 import { PageLinkType } from '../../types/commonTypes';
 
 const PageLink = (props: PageLinkType) => {
-  const { page, navigation, className } = props;
+  const { text, navigation, className } = props;
 
   return (
     <Link key={navigation} href={`${navigation}`}>
-      <a className={className}>{page}</a>
+      <a className={`${className} cursor-pointer`}>{text}</a>
     </Link>
   );
 };

@@ -10,12 +10,12 @@ const HeaderContainer = () => {
 
   return (
     <div className="w-full bg-slate-900">
-      <header className="px-8 py-8 lg:px-24 2xl:px-32 3xl:w-9/12 3xl:m-auto max-w-screen-3xl">
+      <header className="px-8 py-4 lg:px-24 2xl:px-32 3xl:w-9/12 3xl:m-auto max-w-screen-3xl">
         <div className="flex text-white justify-between items-center text-dp-bodytext-l-m w-full">
-          <PageLink navigation={'/'} page={'Petya Ferreira'} />
+          <PageLink navigation={'/'} text={'Petya Ferreira'} />
           <PageLink
             navigation={'mailto:petianaidenova@gmail.com'}
-            page={'Get in touch'}
+            text={'Get in touch'}
             className="hidden lg:flex"
           />
           <button

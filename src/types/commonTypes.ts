@@ -6,7 +6,7 @@ export interface ContactType {
 }
 
 export interface PageLinkType {
-  page: string;
+  text: string;
   navigation: string;
   className?: string;
 }

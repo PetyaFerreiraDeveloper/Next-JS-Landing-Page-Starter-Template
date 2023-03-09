@@ -7,11 +7,12 @@ import { Meta } from '../layout/Meta';
 
 const Index = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       <Meta
         title="PetyaFerreira"
         description="Hello from me - Petya Ferreira. This is my portfolio. Enjoy the read"
       />
+      <Hero />
       <Hero />
       {/* <section className="flex flex-col justify-center items-center h-full bg-red-500">
         <h1 className="">My portfolio</h1>
